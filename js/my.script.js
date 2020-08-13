@@ -24,7 +24,7 @@
 document.addEventListener('DOMContentLoaded', function(){
   //背景
   if (window.matchMedia( "(max-width: 740px)" ).matches) {
-    var images = [ 'url(img/randomImg-01_sp.JPG)', 'url(img/randomImg-02_sp.JPG)', 'url(img/randomImg-03_sp.JPG)' ];
+    var images = [ 'url(randomImg-01_sp.JPG)', 'url(randomImg-02_sp.JPG)', 'url(randomImg-03_sp.JPG)' ];
   $(function(){
   var backgroundRandom = function(){
     var number = Math.floor(Math.random() * images.length);
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
   setInterval(backgroundRandom, 5000);
   });
   } else {
-    var images = [ 'url(img/photograph-2015-06_pc.JPG)', 'url(img/photograph-2017-01-02_pc.jpg)', 'url(img/photograph-2017-02-04_pc.JPG)' ];
+    var images = [ 'url(photograph-2015-06_pc.JPG)', 'url(photograph-2017-01-02_pc.jpg)', 'url(photograph-2017-02-04_pc.JPG)' ];
     $(function(){
     var backgroundRandom = function(){
       var number = Math.floor(Math.random() * images.length);
