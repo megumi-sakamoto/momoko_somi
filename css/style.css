@@ -25,7 +25,7 @@ a{
  #randomImg-pc{
    width: 100vw;
    height: 100vh;
-   background-image: url(../img/photograph-2015-06_pc.JPG);
+   background-image: url(photograph-2015-06_pc.JPG);
    background-position: center center;
    background-size: cover;
    opacity: 1;
@@ -139,7 +139,7 @@ h2{/* liのwidth15%の時は消す */
   
   #randomImg-sp{
     height: 100vh;
-    background-image: url(../img/randomImg-01_sp.JPG);
+    background-image: url(randomImg-01_sp.JPG);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
