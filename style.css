@@ -1,0 +1,263 @@
+body{
+  font-family: 'Poiret One', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.spHeader{
+  display:none;
+}
+
+ #randomImg-pc{
+   width: 100vw;
+   height: 100vh;
+   background-image: url(../img/photograph-2015-06_pc.JPG);
+   background-position: center center;
+   background-size: cover;
+   opacity: 1;
+   transition: all 1.5s;
+}
+
+
+.pcHeader{
+  opacity: 6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header-inner{
+  height: 49px;
+  padding: 20px 30px 10px 30px;
+  border-bottom: solid 1px #fff;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+
+}
+
+.pcheader-logo{
+  max-width: 150px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+h2{/* liのwidth15%の時は消す */
+  margin: 0;
+  line-height: 50px;
+  text-shadow:0 0 5px #fff;
+}
+
+.pcHeader nav{
+  margin-left: auto;
+  max-width: 800px;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.pcHeader ul{
+  margin: 0;
+}
+
+.pcHeader li{
+  display: inline-block;
+   /*width: 30%; または15% */
+   width: 125px;
+  text-align: center;
+  line-height: 30px;/* width15%の時は消す */
+} 
+
+.pcHeader li a{
+  height: 30px;
+  width: 100%;
+  transition: all .3s;
+  display: inline-block;
+  /* padding: 8px 15px; */
+}
+
+.pcHeader .forpc li a:hover{
+  box-shadow: 0 0 3px 2px #fff;
+  background-color: #333;
+  opacity: .8;
+}
+
+
+
+@media screen and (max-width: 740px){
+  .wrapper {
+    padding: 0;
+  }
+
+  .forpc{
+    display: none;
+  }
+  
+  .spHeader {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Poiret One', cursive;
+    height: 40px;
+    position: fixed;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    padding: 5px 0;
+    z-index: 40;
+    transition: .4s;
+  }
+
+  .spHeader h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 30px;
+    font-size: 24px;
+    font-size: 1.8rem;
+  }
+
+  #randomImg-pc{
+    display: none;
+  }
+  
+  #randomImg-sp{
+    height: 100vh;
+    background-image: url(../img/randomImg-01_sp.JPG);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: all 1.5s;
+  }
+
+
+  .menuButton{
+    display: block;
+    height: 50px;
+    width: 50px;
+    /* background:pink; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+  }
+
+  .menuButton div{
+    height: 1px;
+    width: 50%;
+    background-color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .4s;
+  }
+
+  .menuButton div:nth-last-of-type(1){
+    transform: translate(-50%,-10px);
+  }
+  .menuButton div:nth-last-of-type(3){
+    transform: translate(-50%,10px);
+  }
+
+  .menuButton.active div:nth-last-of-type(1){
+    transform: rotate(45deg) translate(-50%,0px);
+    transform-origin: 0% 50%;
+  }
+
+  .menuButton.active div:nth-last-of-type(2){
+    opacity: 0;
+  }
+
+  .menuButton.active div:nth-last-of-type(3){
+    transform: rotate(-45deg) translate(-50%,0px);
+    transform-origin: 0% 50%;
+  }
+
+  .menuButton:hover{
+    cursor: pointer;
+  }
+
+  .spHeader-menu{
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    background-color:black;
+    transition: .6s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    z-index: 20;
+    overflow: auto;
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  .spHeader-menu.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  .spHeader-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .spHeader-menu ul li{
+    margin-top: 10px;
+  }
+
+  .spHeader-menu li a{
+    display: block;
+    line-height: 30px;
+  }
+
+  .mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+  }
+
+  .mask.active{
+    opacity: .8;
+    visibility: visible;
+  }
+
+  .title.active{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .spHeader.active{
+    background-color: unset;
+  }
+}
