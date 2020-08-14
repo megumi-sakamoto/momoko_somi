@@ -264,7 +264,7 @@ li a:hover{
     position: fixed;
     top: 0;
     right: 0;
-    width: 100vw;
+    width: 45vw;
     z-index: 20;
     overflow: auto;
     height: 70vh;
