@@ -267,7 +267,7 @@ li a:hover{
     width: 60vw;
     z-index: 20;
     overflow: auto;
-    height: 70vh;
+    height: 100vh;
     max-height: 100vh;
   }
 
