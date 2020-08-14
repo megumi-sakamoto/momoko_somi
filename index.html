@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+ 
 </head>
 <body class="home">
   <div class="mask" id="mask"></div>
@@ -23,9 +23,10 @@
         </a>
         <nav class="spHeader-menu" id="spHeader-menu">
           <ul>
-            <li><a href="#">Photography</a></li>
+            <li><a href="#">Portrait</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Film</a></li>
             <li><a href="#">Landscape</a></li>
-            <li><a href="#">Fashion</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
@@ -39,9 +40,10 @@
           <a class="pcheader-logo" href="index.html"><h2>Momoko Somi</h2></a>
           <nav>
               <ul>
-                <li><a href="#">Photography</a></li>
+                <li><a href="#">Portrait</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Film</a></li>
                 <li><a href="#">Landscape</a></li>
-                <li><a href="#">Fashion</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -50,12 +52,21 @@
         </div>
       </div>
     </header>
-
-    <div id="randomImg-sp" class="spImage formobile"> </div>
     
-    <div id="randomImg-pc" class="pcImage"></div>
+    <div id="randomImg-pc" class="pcImage">
+      <div class="main_img" style="background-image: url(img/photograph-2015-06_pc.JPG)"></div>
+      <div class="main_img" style="background-image: url(img/photograph-2017-02-04_pc.jpg)"></div>
+      <div class="main_img" style="background-image: url(img/photograph-2017-01-02_pc.jpg)"></div>
+    </div>
+
+    <div id="randomImg-sp" class="spImage formobile">
+      <div class="main_img" style="background-image: url(img/randomImg-01_sp.JPG)"></div>
+      <div class="main_img" style="background-image: url(img/randomImg-02_sp.JPG)"></div>
+      <div class="main_img" style="background-image: url(img/randomImg-03_sp.JPG)"></div>
+    </div>
 </div>
 
-  <script src="js/my.script.js"></script>
+<script src="js/my.script.js"></script>
+ 
 </body>
 </html>
