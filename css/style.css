@@ -299,7 +299,7 @@ li a:hover{
     font-size: 1.2em;
   }
 
-  /* .mask{
+  .mask{
     position: fixed;
     top: 0;
     left: 0;
@@ -315,7 +315,7 @@ li a:hover{
   .mask.active{
     opacity: .8;
     visibility: visible;
-  } */
+  }
 
   .title.active{
     opacity: 0;
