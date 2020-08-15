@@ -134,7 +134,7 @@ h2{/* liのwidth15%の時は消す */
   display: inline-block;
 }
 
-.pcHeader li a:hover{
+li a:hover{
   box-shadow: 0 0 3px 2px #fff;
   background-color: #333;
   opacity: .8;
@@ -188,10 +188,6 @@ main{
 .content-link li{
   display: inline-block;
 }
-
-
-
-
 
 @media screen and (max-width: 740px){
   .forpc,#randomImg-pc{
@@ -365,10 +361,29 @@ main{
     width: unset;
   }
 
+  .spHeader h3{
+    margin: 0;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    top: 18px;
+    left: 160px;
+  }
+  .spHeader h3{
+    padding: 0 10px;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+  }
+
   .content-link ul li img{
     width: auto;
-    height: 150px;
+    height: 160px;
   }
+
+  .link-image{
+    margin:10px 5px;
+  }
+
 
   
 }
