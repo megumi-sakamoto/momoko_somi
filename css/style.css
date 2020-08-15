@@ -359,6 +359,7 @@ main{
 
   main{
     width: unset;
+    margin: 15% auto 15% auto;
   }
 
   .spHeader h3{
