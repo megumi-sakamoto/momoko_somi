@@ -1,374 +1,68 @@
-body{
-  font-family: 'Poiret One', cursive;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momoko Somi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="index">
+  <header>
+    <!-- spヘッダー -->
+    <div class="spHeader" id="spHeader">
+      <a href="index.html"><h1 class="title" id="title">Momoko Somi</h1></a>
+      <div class="mask" id="mask"></div>
+      <a class="menuButton" id="menuButton">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+      <nav class="spHeader-menu" id="spHeader-menu">
+        <ul>
+          <li><a href="Portrait.html">Portrait</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Film</a></li>
+          <li><a href="#">Landscape</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-ul{
-  padding: 0;
-}
+    <!-- pcヘッダー -->
+    <div class="pcHeader forpc">
+      <div class="header-inner forpc">
+        <a class="pcheader-logo" href="index.html"><h2>Momoko Somi</h2></a>
+        <nav>
+            <ul>
+              <li><a href="Portrait.html">Portrait</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Film</a></li>
+              <li><a href="#">Landscape</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- pc背景-->
+  <div id="randomImg-pc" class="pcImage">
+    <div class="main_img" style="background-image: url(img/photograph-2015-06_pc.JPG)"></div>
+    <div class="main_img" style="background-image: url(img/photograph-2020-02-04_pc.jpg)"></div>
+    <div class="main_img" style="background-image: url(img/photograph-2020-01-02_pc.jpg)"></div>
+  </div>
+  <!-- sp背景 -->
+  <div id="randomImg-sp" class="spImage formobile">
+    <div class="main_img" style="background-image: url(img/randomImg-01_sp.JPG)"></div>
+    <div class="main_img" style="background-image: url(img/randomImg-02_sp.JPG)"></div>
+    <div class="main_img" style="background-image: url(img/randomImg-03_sp.JPG)"></div>
+  </div>
 
-li{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
-.spHeader,#randomImg-sp{
-  display:none;
-}
-
-#randomImg-pc{
-  height: 100vh;
-  overflow: hidden;
-  position: relative; 
-}
-
-.main_img {
-  z-index:10;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-animation: anime 18s 0s infinite;
-  animation: anime 18s 0s infinite;
-  animation-timing-function: ease-in-out;
-}
-
-.main_img:nth-of-type(2) {
-  -webkit-animation-delay: 6s;
-  animation-delay: 6s;
-}
-
-.main_img:nth-of-type(3) {
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
-}
-
-@keyframes anime {
-  0% {
-        opacity: 0;
-    }
-
-  17% {
-      opacity: 1;
-  }
- 
-  35% {
-      opacity: 1;
-  }
-
-  50% {
-      opacity: 0;
-      z-index:9;
-  }
-  100% { 
-    opacity: 0
-  }
-}
-
-
-.pcHeader{
-  opacity: 6;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
-
-.header-inner{
-  height: 49px;
-  padding: 20px 30px 10px 30px;
-  border-bottom: solid 1px #fff;
-  margin: 0 auto;
-  width: 80%;
-  display: flex;
-
-}
-
-.pcheader-logo{
-  max-width: 150px;
-  width: 100%;
-  margin-right: 50px;
-}
-
-h2{/* liのwidth15%の時は消す */
-  margin: 0;
-  line-height: 50px;
-  text-shadow:0 0 5px #fff;
-}
-
-.pcHeader nav{
-  margin-left: auto;
-  max-width: 800px;
-  width: 100%;
-  align-self: flex-end;
-}
-
-.pcHeader ul{
-  margin: 0;
-}
-
-.pcHeader li{
-  display: inline-block;
-   /*width: 30%; または15% */
-   width: 90px;
-  text-align: center;
-   line-height: 30px;/*width15%の時は消す */
-} 
-
-.pcHeader li a{
-  height: 30px;
-  width: 100%;
-  transition: all .3s;
-  display: inline-block;
-}
-
-.pcHeader li a:hover{
-  box-shadow: 0 0 3px 2px #fff;
-  background-color: #333;
-  opacity: .8;
-}
-
-#portrait .pcHeader nav ul li:first-child{
-  border-left: solid 1px #fff;
-  border-right: solid 1px #fff;
-}
-
-
-main{
-  max-width: 900px;
-  width: 100%;
-  margin: 10% auto 10% auto;
-}
-
-.content-link ul{
-  width: 100%;
-  text-align: center;
-}
-
-
-.content-link ul li img{
-  width: auto;
-  height: 250px;
-  opacity: .5;
-}
-
-.link-image{
-  position: relative;
-  display: inline-block;
-  box-shadow: 0 0 3px 2px #fff;
-  margin:15px 15px;
-}
-
-.link-image p{
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  top: 50%;
-  left:50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-}
-
-.content-link li{
-  display: inline-block;
-}
-
-
-
-
-
-@media screen and (max-width: 740px){
-  .forpc,#randomImg-pc{
-    display: none;
-  }
-  
-  .spHeader {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-family: 'Poiret One', cursive;
-    height: 40px;
-    position: fixed;
-    background-color: black;
-    opacity: 0.9;
-    width: 100%;
-    /* padding: 5px 0; */
-    z-index: 40;
-    transition: .4s;
-  }
-
-  .spHeader h1 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 40px;
-    line-height: 40px;
-    margin: 5px 30px;
-    font-size: 24px;
-    font-size: 1.2rem;
-    text-shadow:0 0 2px #fff;
-  }
-
-  
-  #randomImg-sp{
-    display: block;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-  }
-
-
-  .menuButton{
-    display: block;
-    height: 40px;
-    width: 50px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 30;
-  }
-
-  .menuButton div{
-    height: 1px;
-    width: 50%;
-    background-color:#fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: .4s;
-  }
-
-  .menuButton div:nth-last-of-type(1){
-    transform: translate(-50%,-10px);
-  }
-  .menuButton div:nth-last-of-type(3){
-    transform: translate(-50%,10px);
-  }
-
-  .menuButton:hover div:nth-last-of-type(1){
-    transform: translate(-50%,-7px);
-  }
-  .menuButton:hover div:nth-last-of-type(3){
-    transform: translate(-50%,7px);
-  }
-
-  .menuButton.active div:nth-last-of-type(1){
-    transform: rotate(45deg) translate(-50%,0px);
-    transform-origin: 0% 50%;
-  }
-
-  .menuButton.active div:nth-last-of-type(2){
-    opacity: 0;
-  }
-
-  .menuButton.active div:nth-last-of-type(3){
-    transform: rotate(-45deg) translate(-50%,0px);
-    transform-origin: 0% 50%;
-  }
-
-  .menuButton:hover{
-    cursor: pointer;
-  }
-
-
-  .spHeader-menu{
-    opacity: 0;
-    visibility: hidden;
-    transition: .4s;
-    background-color:black;
-    transition: .6s;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 45vw;
-    z-index: 20;
-    overflow: auto;
-    height: 100vh;
-    max-height: 100vh;
-  }
-
-  .spHeader-menu.active{
-    opacity: 1;
-    visibility: visible;
-  }
-
-
-  .spHeader-menu ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    /* justify-content: center; 親要素が70vhの時、使用。margin50px解除*/
-    height: 100%;
-  }
-
-  .spHeader-menu ul li{
-    margin-top: 10px;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-
-  .spHeader-menu li a{
-    display: block;
-    line-height: 40px;
-    padding: 5px 10px;
-    font-size: 1.2em;
-  }
-
-  .mask{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 10;
-    opacity: 0;
-    visibility: hidden;
-    transition: .4s;
-  }
-
-  .mask.active{
-    opacity: .8;
-    visibility: visible;
-  }
-
-  .title.active{
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .spHeader.active{
-    background-color: unset;
-  }
-
-  main{
-    width: unset;
-  }
-
-  .content-link ul li img{
-    width: auto;
-    height: 200px;
-  }
-
-  
-}
+<script src="js/my.script.js"></script>
+</body>
+</html>
