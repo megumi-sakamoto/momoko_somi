@@ -3,6 +3,7 @@ body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #333;
 }
 
 ul{
@@ -21,19 +22,6 @@ a{
 .spHeader,#randomImg-sp{
   display:none;
 }
-
- /* #randomImg-pc{
-   position: absolute;
-   left: 0;
-   top:0;
-   width: 100vw;
-   height: 100vh;
-   background-position: center center;
-   background-size: cover;
-   opacity: 1;
-   transition: all 1.5s;
-   animation: animate 16s ease-in-out infinite;
- } */
 
 #randomImg-pc{
   height: 100vh;
@@ -134,7 +122,7 @@ h2{/* liのwidth15%の時は消す */
 .pcHeader li{
   display: inline-block;
    /*width: 30%; または15% */
-   width: 100px;
+   width: 90px;
   text-align: center;
    line-height: 30px;/*width15%の時は消す */
 } 
@@ -144,22 +132,68 @@ h2{/* liのwidth15%の時は消す */
   width: 100%;
   transition: all .3s;
   display: inline-block;
-  /* padding: 8px 15px; */
 }
 
-li a:hover{
+.pcHeader li a:hover{
   box-shadow: 0 0 3px 2px #fff;
   background-color: #333;
   opacity: .8;
 }
 
+#portrait .pcHeader nav ul li:first-child{
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+
+main{
+  max-width: 900px;
+  width: 100%;
+  margin: 10% auto 10% auto;
+}
+
+.content-link ul{
+  width: 100%;
+  text-align: center;
+}
+
+
+.content-link ul li img{
+  width: auto;
+  height: 250px;
+  opacity: .5;
+}
+
+.link-image{
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 0 3px 2px #fff;
+  margin:15px 15px;
+}
+
+.link-image p{
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  top: 50%;
+  left:50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
+
+.content-link li{
+  display: inline-block;
+}
+
+
+
 
 
 @media screen and (max-width: 740px){
-  .wrapper {
-    padding: 0;
-  }
-
   .forpc,#randomImg-pc{
     display: none;
   }
@@ -281,9 +315,9 @@ li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-/*     justify-content: center; */
-    height: 100%;
     margin-top: 50px;
+    /* justify-content: center; 親要素が70vhの時、使用。margin50px解除*/
+    height: 100%;
   }
 
   .spHeader-menu ul li{
@@ -326,5 +360,15 @@ li a:hover{
   .spHeader.active{
     background-color: unset;
   }
+
+  main{
+    width: unset;
+  }
+
+  .content-link ul li img{
+    width: auto;
+    height: 200px;
+  }
+
   
 }
