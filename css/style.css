@@ -413,8 +413,8 @@ img {
     color: #fff;
     position: absolute;
     /* top: 18px; */
-    top: 1.2em;
-    left: 12em;
+    top: 18px;
+    left: 160px;
   }
   .spHeader h3{
     padding: 0 10px;
