@@ -501,7 +501,7 @@ main{
   }
 
   #portrait-each .container {
-    margin-top: 75px;
+    margin-top: 85px;
   }
   
   .link-to-next h3{
@@ -538,7 +538,7 @@ main{
     top: 40px;
     width: 100%;
     z-index: 5;
-    padding: 5px 0;
+    padding: 10px 0;
   }
 
 
