@@ -408,15 +408,15 @@ img {
   }
 
   .spHeader h3{
-    margin: 0 10px;
+    margin: 0 .8em;
     font-size: 15px;
     color: #fff;
     position: absolute;
     display: inline-block;
-/*     top: 1.2em;
-    left: 9.6em; */
-    top: 18px;
-    left: 145px;
+    top: 1.2em;
+    left: 9.6em;
+    /* top: 18px;
+    left: 145px; */
   }
   
   .spHeader h3{
