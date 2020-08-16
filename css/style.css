@@ -498,6 +498,9 @@ main{
 
   .container {
     column-count: 2;
+  }
+
+  #portrait-each .container {
     margin-top: 90px;
   }
   
@@ -537,6 +540,8 @@ main{
     z-index: 100;
     padding: 5px 0;
   }
+
+
 }
 
 @media screen and (max-width: 560px){
