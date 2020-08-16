@@ -19,7 +19,7 @@ a{
   color: white;
 }
 
-.spHeader,#randomImg-sp{
+.spHeader,#randomImg-sp,.formobile{
   display:none;
 }
 
@@ -93,7 +93,7 @@ a{
   margin: 0 auto;
   width: 80%;
   display: flex;
-
+  background-color: #333;
 }
 
 .pcheader-logo{
@@ -119,15 +119,15 @@ h2{/* liのwidth15%の時は消す */
   margin: 0;
 }
 
-.pcHeader li{
+.pcHeader li,.link-to-next li{
   display: inline-block;
    /*width: 30%; または15% */
-   width: 90px;
+  width: 90px;
   text-align: center;
-   line-height: 30px;/*width15%の時は消す */
+  line-height: 30px;/*width15%の時は消す */
 } 
 
-.pcHeader li a{
+.pcHeader li a,.link-to-next li a{
   height: 30px;
   width: 100%;
   transition: all .3s;
@@ -141,6 +141,16 @@ li a:hover{
 }
 
 #portrait .pcHeader nav ul li:first-child{
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+.portrait-each-2020 .pcHeader nav ul li:first-child{
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+.portrait-each-2020 .link-to-next ul li:first-child{
   border-left: solid 1px #fff;
   border-right: solid 1px #fff;
 }
@@ -182,7 +192,7 @@ li a:hover{
 main{
   max-width: 900px;
   width: 100%;
-  margin: 10% auto 10% auto;
+  margin: 100px auto 60px auto;
 }
 
 img {
@@ -204,6 +214,7 @@ img {
   display: inline-block; 
   box-shadow: 0 0 3px 2px #fff;
   margin:10px 10px;
+  transition: .4s;
 }
 
 .link-image p{
@@ -233,10 +244,38 @@ img {
   opacity: 1;
 }
 
+.link-image a:hover p{
+  font-size: 24px;
+}
+
+.link-to-next h3{
+  font-size: 15px;
+  text-align: center;
+  display: inline-block;
+  padding: 0 15px;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #fff;
+}
+
+.link-to-next{
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.link-to-next li a{
+  height: unset;
+}
+
 
 @media screen and (max-width: 740px){
   .forpc,#randomImg-pc{
     display: none;
+  }
+
+  .formobile{
+    display: block;
   }
   
   .spHeader {
@@ -404,10 +443,10 @@ img {
 
   main{
     width: unset;
-    margin: 15% auto 15% auto;
+    margin: 10% auto 10% auto;
   }
 
-  .spHeader h3{
+  /* .spHeader h3{
     margin: 0 .8em;
     font-size: 15px;
     color: #fff;
@@ -415,13 +454,29 @@ img {
     display: inline-block;
     top: 1.2em;
     left: 10em;
-    /* top: 18px;
-    left: 145px; */
+    top: 18px;
+    left: 145px;
   }
-  
   .spHeader h3{
     padding: 0 10px;
     border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+  } */
+
+  /* .spHeader h4{
+    margin: 0 .8em;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    top: 1.2em;
+    left: 14.4em;
+    top: 18px;
+    left: 145px;
+  } */
+
+  .spHeader h4{
+    padding: 0 10px;
     border-right: solid 1px #fff;
   }
 
@@ -442,4 +497,12 @@ img {
     column-count: 2;
   }
   
+  .link-to-next h3{
+    font-size: 13px;
+  }
+
+  .link-to-next li{
+    width: unset;
+  }
+
 }
