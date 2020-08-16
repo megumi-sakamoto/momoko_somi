@@ -528,14 +528,14 @@ main{
     opacity: .8;
   }
 
-  .link-to-next{
+/*   .link-to-next{
     background-color: #fff;
     position: fixed;
     top: 40px;
     width: 100%;
     z-index: 100;
     padding: 5px 0;
-  }
+  } */
 }
 
 @media screen and (max-width: 560px){
