@@ -407,12 +407,14 @@ img {
     margin: 15% auto 15% auto;
   }
 
-  .spHeader h3{
-    margin: 0;
+    .spHeader h3{
+    margin: 0 10px;
     font-size: 15px;
     color: #fff;
     position: absolute;
-    /* top: 18px; */
+    display: inline-block;
+    /* top: 1.2em;
+    left: 12em; */
     top: 18px;
     left: 170px;
   }
