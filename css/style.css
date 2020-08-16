@@ -93,7 +93,6 @@ a{
   margin: 0 auto;
   width: 80%;
   display: flex;
-  background-color: #333;
 }
 
 .pcheader-logo{
@@ -195,7 +194,7 @@ main{
   margin: 100px auto 60px auto;
 }
 
-img {
+.link-image img {
   width: 100%;
   vertical-align: bottom;
   opacity: .8;
@@ -237,7 +236,7 @@ img {
 
 
 .link-image a:hover{
-  box-shadow: 0 0 3px 2px #fff;
+  box-shadow: 0 0 1px 1px #fff;
 }
 
 .link-image a:hover img{
@@ -253,7 +252,7 @@ img {
   text-align: center;
   display: inline-block;
   padding: 0 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 0;
   color: #fff;
 }
@@ -270,6 +269,10 @@ img {
 
 
 @media screen and (max-width: 740px){
+  body{
+    background-color: #fff;
+  }
+
   .forpc,#randomImg-pc{
     display: none;
   }
@@ -286,7 +289,7 @@ img {
     font-family: 'Poiret One', cursive;
     height: 40px;
     position: fixed;
-    background-color: black;
+    background-color: #111;
     opacity: 0.9;
     width: 100%;
     /* padding: 5px 0; */
@@ -373,7 +376,7 @@ img {
     opacity: 0;
     visibility: hidden;
     transition: .4s;
-    background-color:black;
+    background-color:#111;
     transition: .6s;
     position: fixed;
     top: 0;
@@ -428,7 +431,7 @@ img {
   }
 
   .mask.active{
-    opacity: .8;
+    opacity: .9;
     visibility: visible;
   }
 
@@ -443,7 +446,7 @@ img {
 
   main{
     width: unset;
-    margin: 15% auto 15% auto;
+    margin: 70px auto 70px auto;
   }
 
   .spHeader h3{
@@ -454,8 +457,8 @@ img {
     display: inline-block;
     top: 1.2em;
     left: 10em;
-    top: 18px;
-    left: 145px;
+    /* top: 18px;
+    left: 145px; */
   }
   .spHeader h3{
     padding: 0 10px;
@@ -485,13 +488,13 @@ img {
     height: 160px;
   }
 
-/*   .link-image{
+  /* .link-image{
     margin:1% 1%;
   } */
 
-  .link-image{
+  /* .link-image{
     box-shadow: 0 0 1px 1px #fff;
-  }
+  } */
 
   .container {
     column-count: 2;
@@ -499,10 +502,41 @@ img {
   
   .link-to-next h3{
     font-size: 13px;
+    color: black;
   }
 
   .link-to-next li{
     width: unset;
+    line-height: 20px;
+  }
+  
+  #portrait-each img{
+    opacity: 1;
   }
 
+  #portrait .link-image{
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .portrait-each-2020 .link-to-next ul li:first-child{
+    border-color: #333;
+  }
+
+  .link-to-next a:hover{
+    box-shadow: 0 0 3px 2px rgb(121, 119, 119);
+    background-color:#fff;
+    opacity: .8;
+  }
+
+}
+
+@media screen and (max-width: 560px){
+  .link-to-next ul{
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  .link-to-next h3 {
+    padding: 0 10px;
+  }
 }
