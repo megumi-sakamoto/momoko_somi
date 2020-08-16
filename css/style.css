@@ -145,6 +145,39 @@ li a:hover{
   border-right: solid 1px #fff;
 }
 
+#clothing .pcHeader nav ul li:nth-child(2){
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#film .pcHeader nav ul li:nth-child(3){
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#landscape .pcHeader nav ul li:nth-child(4){
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#projects .pcHeader nav ul li:nth-child(5){
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#about .pcHeader nav ul li:nth-child(6){
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#contact .pcHeader nav ul li:nth-child(7){
+  border-left: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+#portrait .header-inner{
+  background-color:#333;
+}
 
 main{
   max-width: 900px;
@@ -152,23 +185,25 @@ main{
   margin: 10% auto 10% auto;
 }
 
-.content-link ul{
+img {
   width: 100%;
-  text-align: center;
+  vertical-align: bottom;
+  opacity: .8;
 }
 
-
-.content-link ul li img{
-  width: auto;
-  height: 250px;
-  opacity: .5;
+.container {
+  margin: 0 auto;
+  padding:5px 5px;
+  width: 90%;
+  column-count: 3;
+  column-gap: 0;
 }
 
 .link-image{
   position: relative;
-  display: inline-block;
+  display: inline-block; 
   box-shadow: 0 0 3px 2px #fff;
-  margin:15px 15px;
+  margin:10px 10px;
 }
 
 .link-image p{
@@ -185,9 +220,19 @@ main{
   padding:0;
 }
 
-.content-link li{
-  display: inline-block;
+.link-image a{
+  display: block;
 }
+
+
+.link-image a:hover{
+  box-shadow: 0 0 3px 2px #fff;
+}
+
+.link-image a:hover img{
+  opacity: 1;
+}
+
 
 @media screen and (max-width: 740px){
   .forpc,#randomImg-pc{
@@ -359,7 +404,7 @@ main{
 
   main{
     width: unset;
-    margin: 70px auto 70px auto;
+    margin: 15% auto 15% auto;
   }
 
   .spHeader h3{
@@ -367,8 +412,9 @@ main{
     font-size: 15px;
     color: #fff;
     position: absolute;
-    top: 18px;
-    left: 160px;
+    /* top: 18px; */
+    top: 1.2em;
+    left: 10.3em;
   }
   .spHeader h3{
     padding: 0 10px;
@@ -382,9 +428,15 @@ main{
   }
 
   .link-image{
-    margin:10px 5px;
+    margin:1% 1%;
   }
 
+  .link-image{
+    box-shadow: 0 0 1px 1px #fff;
+  }
 
+  .container {
+    column-count: 2;
+  }
   
 }
