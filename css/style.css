@@ -446,7 +446,7 @@ main{
 
   main{
     width: unset;
-    margin: 70px auto 70px auto;
+    margin:40px auto 70px auto;
   }
 
   .spHeader h3{
@@ -528,6 +528,13 @@ main{
     opacity: .8;
   }
 
+  .link-to-next{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 15px 0;
+  }
 }
 
 @media screen and (max-width: 560px){
